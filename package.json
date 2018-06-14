@@ -1,0 +1,28 @@
+{
+  "name": "sacramental-registry",
+  "version": "1.0.0",
+  "description": "Storing sacramental records on the blockchain",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatholicBlockchainOrg/SacramentalRegistry.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Catholic",
+    "Sacraments",
+    "Records"
+  ],
+  "author": "Devin Rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CatholicBlockchainOrg/SacramentalRegistry/issues"
+  },
+  "homepage": "https://github.com/CatholicBlockchainOrg/SacramentalRegistry#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
