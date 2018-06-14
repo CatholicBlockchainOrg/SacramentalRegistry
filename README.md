@@ -7,8 +7,8 @@ different versions of node to support those apps. One of the best tools that sup
 Instead of installing node directly on your machine install nvm. Then use that to install node.
 
 #Application
-Very simple application the create a /sacramental-registry endpoint that can handle GET and POST requests. Its
-built using express.
+Very simple application that creates an endpoint(/sacramental-registry) that can handle GET and POST requests. Its
+built using Express.
 
 ## Running 
 
