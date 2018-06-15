@@ -1,6 +1,7 @@
-let express = require('express');
-let bodyParser = require('body-parser');
-let app = express();
+'use strict';
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -8,11 +9,12 @@ let sacramentalRecords = [];
 let primaryKey = 1; 
 
 app.get('/sacramental-records', (req, res) => {
+  console.log('received get request for ' + req.url)
   res.send(sacramentalRecords, 201);
 })
 
 app.post('/sacramental-records', (req, res) => {
-  let sacramentalRecord = req.body;
+  const sacramentalRecord = req.body;
   sacramentalRecord.id = primaryKey++;
   sacramentalRecords.push(sacramentalRecord);
   res.send(sacramentalRecord, 201);
