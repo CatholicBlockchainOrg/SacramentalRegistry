@@ -21,3 +21,5 @@ app.post('/sacramental-records', (req, res) => {
 })
 
 app.listen(3000);
+
+module.exports = app; // for testing
